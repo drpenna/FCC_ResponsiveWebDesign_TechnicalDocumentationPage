@@ -1,0 +1,147 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {scroll-behavior: smooth;
+    }
+}
+
+/* BIG SCREEN */
+@media (min-width: 500px) {
+  nav {
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    top: 0px;
+    left: 0px;
+    display: block;
+    padding-left: 1rem;
+    border-right: 3px solid gray;}
+
+  .nav-header {right-margin: 20px;}    
+
+  .nav-link {
+    padding: 1rem;
+    margin-left: -1rem;
+    display: block;
+    border-top: 1px solid rgb(50, 50, 50);
+    position: relative;
+    }
+    
+
+  main {
+    position: relative;
+    display: block;
+    margin-left: calc(30% + 2.5rem);
+    margin-right: 1.5rem;}
+}
+
+/* SMALL SCREEN */
+@media (max-width: 499px) {
+  
+  body {
+  width: 100%;
+  overflow-x: hidden;
+  margin-left: 0;}
+  
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: block;
+    height: 30%;
+    }
+
+  .nav-header-div {    
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+  .menu {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    height: 20%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom: 3px solid gray;
+    }
+
+  .nav-link {
+    display: block;
+    line-height: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-top: 1px solid rgb(50, 50, 50);
+    }
+
+   main {
+    position: relative;
+    top: 30%;
+    height: 70%;       
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 1rem;    
+    }
+
+   .text {
+     margin-right: 5%;
+     }
+
+}
+
+
+/* GENERAL ################ */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;}
+
+
+* {
+  font-family: sans-serif;
+}
+
+.nav-header {font-size: 2.2rem;
+word-wrap: break-word;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-link {background-color: white;}
+
+.nav-link:hover {background-color: gray;}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {color:white;}
+
+header {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.text {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+code {
+  display: block;
+  font-family: monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #DCDCDC;
+  margin-left: 1rem;
+  padding: 1rem;
+}
